@@ -1,74 +1,80 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
 }
 
-body{
-    margin:0;
+body {
+    margin: 0;
     background-color: rgb(180, 250, 199);
 }
 
-.container{
+.container {
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
-} 
-
-.pantalla{
-grid-column:1/-1;
- padding: 15px;
- margin: 10px 10px 15px;
-  background-color: rgb(108, 107, 107);
-        border-radius: 20px;
-        text-align: right;
-        justify-content: space-between;
-        box-shadow:5px 5px 5px rgb(78, 78, 78) ;
-   
 }
-.numeroArriba{font-size: 2em;}
-.numeroAbajo{font-size: 1.75em;}
-.calculadora{
+
+.pantalla {
+    grid-column: 1/-1;
+    padding: 15px;
+    margin: 10px 10px 15px;
+    background-color: rgb(108, 107, 107);
+    border-radius: 20px;
+    text-align: right;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px rgb(78, 78, 78);
+}
+.numeroArriba {
+    font-size: 2em;
+}
+.numeroAbajo {
+    font-size: 1.75em;
+}
+.calculadora {
     display: grid;
-    grid-template-columns: repeat(4,75px);
-    grid-template-rows: 160px repeat(5,75px);
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
     border-radius: 30px;
     padding: 25px;
     background-color: rgb(89, 120, 232);
     box-shadow: 15px 20px 10px rgb(66, 65, 65);
     border-color: rgb(144, 235, 186);
-   
 }
-button{
+button {
     cursor: pointer;
     padding: 0;
     margin: 10px;
     border-radius: 15px;
     font-size: 1.75em;
-    background-color: rgb(235, 186, 140)     ;
+    background-color: rgb(235, 186, 140);
     box-shadow: 1.5px 2px 8px rgb(66, 65, 65);
-    border:none 
+    border: none;
 }
-button:active{
-    background-color: rgb(117, 118, 119) ;
+button:active {
+    background-color: rgb(117, 118, 119);
 }
-button:hover{
+button:hover {
     filter: brightness(50%);
     -webkit-filter: brightness(50%);
 }
-.borrartodo{
+.borrartodo {
     grid-column: span 2;
 }
-.igual{
+.igual {
     grid-column: span 2;
-    background:rgb(90, 134, 216) ;
+    background: rgb(90, 134, 216);
 }
-.numero{background: rgb(90, 134, 216); 
+.numero {
+    background: rgb(90, 134, 216);
     box-shadow: 1.5px 2px 8px rgb(66, 65, 65);
-border:none }
-.numero-abajo{font-size: 2em;
-top: 20px;}
-.numero-arriba{font-size: 1.5;
-margin-bottom: 30px;}
-
-
+    border: none;
+}
+.numero-abajo {
+    font-size: 2em;
+    top: 20px;
+}
+.numero-arriba {
+    font-size: 1.5;
+    margin-bottom: 30px;
+}
